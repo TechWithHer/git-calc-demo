@@ -17,6 +17,24 @@ def divide(a, b):
 
 def main():
     print("\n🔢 Welcome to CLI Calculator")
+    print("""
+🧮 Welcome to CLI Calculator!
+
+Here’s how to use it:
+
+➕  Add:         Type `add` to perform addition
+➖  Subtract:    Type `sub` to perform subtraction
+✖️  Multiply:    Type `mul` to perform multiplication
+➗  Divide:      Type `div` to perform division
+
+📥 Input: You'll be asked to enter two numbers
+📤 Output: The calculator will display the result
+
+🔁 To calculate again: Just follow the prompts
+❌ To exit: Type `exit` at any time
+
+Let’s get calculating!
+""")
     print("Choose operation: add, subtract, multiply, divide")
     operation = input("Operation: ").strip().lower()
 
