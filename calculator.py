@@ -1,7 +1,7 @@
 # calculator.py
 
 def add(a, b):
-    return a + b
+   return a + b
 
 def subtract(a, b):
     return a - b
@@ -14,7 +14,8 @@ def divide(a, b):
         return a / b
     except ZeroDivisionError:
         return "Error: Cannot divide by zero"
-
+def pow(a,b):
+    return a**b
 def main():
     print("\n🔢 Welcome to CLI Calculator")
     print("""
@@ -35,10 +36,10 @@ Here’s how to use it:
 
 Let’s get calculating!
 """)
-    print("Choose operation: add, subtract, multiply, divide")
+    print("Choose operation: add, subtract, multiply, divide, pow ")
     operation = input("Operation: ").strip().lower()
 
-    if operation not in ['add', 'subtract', 'multiply', 'divide']:
+    if operation not in ['add', 'subtract', 'multiply', 'divide','pow']:
         print("❌ Invalid operation")
         return
 
@@ -57,7 +58,8 @@ Let’s get calculating!
         result = multiply(num1, num2)
     elif operation == 'divide':
         result = divide(num1, num2)
-
+    elif operation == 'pow':
+        result = num1 ** num2
     print(f"✅ Result: {result}")
 
 if __name__ == "__main__":
