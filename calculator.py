@@ -19,8 +19,6 @@ def pow(a,b):
 def main():
     print("\n🔢 Welcome to CLI Calculator")
     print("""
-🧮 Welcome to CLI Calculator!
-
 Here’s how to use it:
 
 ➕  Add:         Type `add` to perform addition
