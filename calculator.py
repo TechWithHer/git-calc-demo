@@ -35,6 +35,7 @@ Here’s how to use it:
 ❌ To exit: Type `exit` at any time
 
 Let’s get calculating!
+You are the BEST !
 """)
     print("Choose operation: add, subtract, multiply, divide, pow ")
     operation = input("Operation: ").strip().lower()
